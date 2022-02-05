@@ -50,7 +50,7 @@
                         
                         <button data-toggle=collapse data-target="#exam">Start Exam</button>
                         <div id="exam" class="collapse">
-                            <form id="questionform" action="point to a submit view" method="post">
+                            <form id="questionform" action="submit/" method="post">
                                 {% for question in lesson.question_set.all %}
                                 <div class="card mt-1">
                                     <div class="card-header"><h5>{{ question.content }}</h5></div>
@@ -68,9 +68,9 @@
                                     </div>
                                 </div>
                                 {% endfor %}
-                            <input class="btn btn-success btn-block" type="submit" value="Submit">
-                    </form>
-                            </div>
+                                <input class="btn btn-success btn-block" type="submit" value="Submit">
+                            </form>
+                        </div>
                     </div>
                 {% endfor %}
             </div>
